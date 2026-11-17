@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+}
+h1, h2, h3, h5, h6, p{
+    margin: 0;
+}
+
+nav .nav-link{
+    color: #fff;
+}
+
+
+#banner{
+    min-height: 550px;
+    background-image: url("../images/3.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Dark overlay for readable text */
+#banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.cover-content {
+    position: relative;
+    z-index: 1;
+    max-width: 650px;
+}
+
+.cover-content h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.cover-content p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+
+#doc-banner{
+    min-height: 550px;
+    background-image: url("../images/doc-cover.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+#doc-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust 0.5 to make it darker or lighter (0.0 to 1.0) */
+    z-index: 0;
+}
+
+#interview-banner{
+    min-height: 550px;
+    background-image: url("../images/inter-cover.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+#interview-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust 0.5 to make it darker or lighter (0.0 to 1.0) */
+    z-index: 0;
+}
+
+#photography-banner{
+    min-height: 550px;
+    background-image: url("../images/photo-cover.jfif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+#photography-banner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust 0.5 to make it darker or lighter (0.0 to 1.0) */
+    z-index: 0;
+}
+
+.custom-card-img {
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px !important; /* Rounds the image corners like the screenshot */
+}
+
+.card {
+    background: transparent !important; /* Removes default card box background if you want flat text underneath */
+}
+
+#contact-banner {
+    min-height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+
+/* Dark overlay for text readability */
+#contact-banner::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 0;
+}
+
+.contact-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 35px;
+    height: 100%;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.info-icon {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(24, 141, 24, 0.1);
+    color: #188d18;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+.info-text h6 {
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+.info-text p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f1f3f5;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #188d18;
+    color: #fff;
+}
+
+.btn-archive {
+    background-color: #188d18;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-archive:hover {
+    background-color: #126e12;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(24, 141, 24, 0.3);
+}
+
+.form-control:focus {
+    border-color: #188d18;
+    box-shadow: 0 0 0 0.25rem rgba(24, 141, 24, 0.25);
+}
+
+#footer {
+    padding: 40px 0;
+}
+
+#footer h5 {
+    margin-bottom: 15px;
+}
+
+#footer p {
+    line-height: 1.8;
+    color: #ddd;
+}
+
+.footer-img {
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
